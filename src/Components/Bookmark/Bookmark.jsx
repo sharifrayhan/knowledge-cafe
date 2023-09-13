@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const Bookmark = ({item}) => {
     const {blog_title} = item
@@ -8,5 +8,9 @@ const Bookmark = ({item}) => {
         </div>
     );
 };
+
+Bookmark.propTypes ={
+    item: PropTypes.object
+}
 
 export default Bookmark;

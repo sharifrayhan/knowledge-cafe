@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { FaBookmark } from 'react-icons/fa';
-import Blogs from '../Blogs/Blogs';
+// import Blogs from '../Blogs/Blogs';
 
 // Define and use PropTypes in your components
 
 
 const Blog = ({blog,handleAddBookmarks, handleTime}) => {
-    const { id, cover_img, blog_title, author, hashtags, posted_date, reading_time } = blog;
+    const { cover_img, blog_title, author, hashtags, posted_date, reading_time } = blog;
     const { name, author_img } = author;
     const [hash1,hash2] = hashtags;
     return (
@@ -36,7 +36,7 @@ const Blog = ({blog,handleAddBookmarks, handleTime}) => {
                 <h1 className=' font-extrabold'>{blog_title}</h1>
                 <div >
                 <p className='text-sm'>{hash1}, {hash2} </p>
-                <button onClick={()=>handleTime(reading_time)} className='text-sm' href="">Mark As Read</button>
+                <button onClick={()=>handleTime(reading_time)} className='text-sm text-violet-900' href="">Mark As Read</button>
                 </div>
             </div>
         </div>
@@ -44,6 +44,8 @@ const Blog = ({blog,handleAddBookmarks, handleTime}) => {
 };
 
 Blog.propTypes ={
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object,
+    handleAddBookmarks: PropTypes.func,
+    handleTime: PropTypes.func
 }
 export default Blog;
