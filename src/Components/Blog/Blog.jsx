@@ -5,7 +5,7 @@ import Blogs from '../Blogs/Blogs';
 // Define and use PropTypes in your components
 
 
-const Blog = ({blog,handleAddBookmarks}) => {
+const Blog = ({blog,handleAddBookmarks, handleTime}) => {
     const { id, cover_img, blog_title, author, hashtags, posted_date, reading_time } = blog;
     const { name, author_img } = author;
     const [hash1,hash2] = hashtags;
@@ -36,7 +36,7 @@ const Blog = ({blog,handleAddBookmarks}) => {
                 <h1 className=' font-extrabold'>{blog_title}</h1>
                 <div >
                 <p className='text-sm'>{hash1}, {hash2} </p>
-                <a className='text-sm' href="">Mark As Read</a>
+                <button onClick={()=>handleTime(reading_time)} className='text-sm' href="">Mark As Read</button>
                 </div>
             </div>
         </div>
