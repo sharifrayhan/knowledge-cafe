@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://i.ibb.co/YNMVF4H/2.png",
+      "blog_title": "Getting Started with Python Programming",
+      "author": {
+        "name": "John Doe",
+        "author_img": "https://i.ibb.co/BLyQn4Q/boy1.png"
+      },
+      "hashtags": ["#beginners", "#programming"],
+      "posted_date": "2023-09-13",
+      "reading_time": "10"
+    },
+    {
+      "id": 2,
+      "cover_img": "https://i.ibb.co/pxDxGNP/3.png",
+      "blog_title": "Web Development for Beginners",
+      "author": {
+        "name": "Matt Smith",
+        "author_img": "https://i.ibb.co/LZy560Q/boy2.jpg"
+      },
+      "hashtags": ["#beginners", "#programming"],
+      "posted_date": "2023-09-12",
+      "reading_time": "8"
+    },
+    {
+      "id": 3,
+      "cover_img": "https://i.ibb.co/PTNQwjL/4.jpg",
+      "blog_title": "Introduction to JavaScript",
+      "author": {
+        "name": "Alice Johnson",
+        "author_img": "https://i.ibb.co/zGVZ173/girl1.jpg"
+      },
+      "hashtags": ["#beginners", "#programming"],
+      "posted_date": "2023-09-11",
+      "reading_time": "12"
+    },
+
+    {
+        "id": 4,
+        "cover_img": "https://i.ibb.co/4T8prVN/1.jpg",
+        "blog_title": "Introduction to Data Science",
+        "author": {
+          "name": "Emma Marison",
+          "author_img": "https://i.ibb.co/DrkxDph/girl2.jpg"
+        },
+        "hashtags": ["#beginners", "#datascience"],
+        "posted_date": "2023-09-10",
+        "reading_time": "15"
+      }
+      
+  ]
+  
