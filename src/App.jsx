@@ -24,7 +24,7 @@ function App() {
   return (
     <>
     {/* body */}
-    <div className=' mx-32 my-3'>
+    <div className=' mx-4 md:mx-23 lg:mx-32 my-3'>
     {/* header section */}
     <div>
     <Header></Header>
